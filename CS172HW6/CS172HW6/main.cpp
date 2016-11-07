@@ -35,19 +35,34 @@ int main() {
     
     //EX06_02 – Liang Programming Exercise 13.2: Count characters
     cout << "EX06_02 13.2" <<endl;
-    countCharacters();
+    //countCharacters();
     
     //EX06_03 – Liang Programming Exercise 13.5: Baby names
     cout << "EX06_03 13.5" <<endl;
-    babyName();
+    //babyName();
     
     //EX06_04 – Liang Programming Exercise 14.3: The Circle class
     cout << "EX06_04 14.3" <<endl;
+    Circle c1(6);
+    Circle c2(14);
     
+    if(c1.getRadius() < c2.getRadius())
+        cout << "The first circle is smaller than the second" << endl;
+    if(c1.getRadius() <= c2.getRadius())
+        cout << "The fist circle is smaller than or equal to the second" << endl;
+    if(c1.getRadius() == c2.getRadius())
+        cout << "The first circle is equal to the second" << endl;
+    if(c1.getRadius() != c2.getRadius())
+        cout << "The first circle is not equal to the second" << endl;
+    if(c1.getRadius() > c2.getRadius())
+        cout << "The first circle is greater than the second" << endl;
+    if(c1.getRadius() >= c2.getRadius())
+        cout << "The first circle is greater than or equal to the second" << endl;
+    cout <<endl;
     
     //EX06_05 – Liang Programming Exercise 14.7: Math: The Complex class
     cout << "EX06_05 14.7" <<endl;
-    complexClass();
+    
     
     
     

@@ -55,31 +55,7 @@ int Circle::getNumberOfObjects()
 {
     return numberOfObjects;
 }
-/*
-void classTest()
-{
-    Circle temp;
-    
-    Circle arrayOfCircles[SIZE] = {Circle(3.5), Circle(2.33), Circle(9.81)};
-    
-    for (int i= 0; i< SIZE-1; i++)
-    {
-        for (int j=SIZE -1; j>0; j--)
-        {
-            if (arrayOfCircles[j] < arrayOfCircles[j-1])
-            {
-                temp = arrayOfCircles[j];
-                arrayOfCircles[j] = arrayOfCircles[j-1];
-                arrayOfCircles[j-1] =temp;
-            }
-        }
-        for (int i= 0; i< SIZE; i++)
-            cout << " Circle [" << i << "]: area of " <<arrayOfCircles[i].getArea() << ", radius of " <<arrayOfCircles[i].getRadius()<<endl;
-    }
-    
-}
 
-*/
 
 
 

@@ -16,29 +16,57 @@
 using namespace std;
 #include "13_1.hpp"
 #include "CountCharacters13_2.hpp"
+/*
 void countCharacters()
 {
-    string inputFilename;
-    cout<<"Enter a file name: ";
-    cin>> inputFilename;
-    
-    int sumChars =0;
-    char currentChar;
-    
-    ifstream input(inputFilename.c_str());
-    
-    if(input.fail())
+    string fileName;
+    cout << "Enter a file name: ";
+    getline(cin, fileName);
+
+    fstream iofile(fileName, ios::in | ios::out);
+    int count =0;
+    if(!iofile)
     {
-        cout<< inputFilename<<" does not exist" <<endl;
+        cout << "ERROR: Could not open file" << endl;
     }
+  
     else
     {
-        cout<<"Number of characters in File: "<<endl;
-        while(input >> currentChar)
-        {
-            cout<< currentChar<<" ";
-            sumChars++;
-        }
-        
+        char character;
+            while( iofile >> character)
+            {
+                count++;
+            }
+            iofile.clear();
+        cout << "The file has " << count << " characters" << endl;
     }
+        iofile.close();
 }
+*/
+/*
+int ex02()
+{
+    ifstream input;
+    
+    input.open("Invite.txt");
+    cout << "Counting characters: " <
+    if(input.fail())
+    {
+        cout << "File does not exist" << endl;
+        cout << "Exit program" << endl;
+        return 0;
+    }
+    int count = 0;
+    while (!input.eof())
+    {
+        intput.get();
+        count++;
+    }
+    count--;
+    input.close();
+    cout << "Number of character in the file: " << count << endl;
+    system ("pause");
+    return 0;
+    
+}
+*/

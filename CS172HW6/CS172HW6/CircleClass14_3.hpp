@@ -10,6 +10,7 @@
 #define CircleClass14_3_hpp
 
 #include <stdio.h>
+int ex04();
 class Circle
 {
 private:
@@ -25,5 +26,6 @@ public:
     static int getNumberOfObjects();
     void classTest();
 };
+
 
 #endif /* CircleClass14_3_hpp */
