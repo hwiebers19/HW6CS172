@@ -62,7 +62,21 @@ int main() {
     
     //EX06_05 – Liang Programming Exercise 14.7: Math: The Complex class
     cout << "EX06_05 14.7" <<endl;
+    int A, B;
+    int C, D;
+    Complex operand1, operand2, result;
+    Complex complex1(A, B);
+    Complex complex2(C, D);
+    cout << "Enter the first complex number: ";
+    cin >> A >> B;
+    cout << "Enter the second complex number: ";
+    cin >> C >> D;
     
+    result.add(complex1, complex2);
+    result.subtract(complex1, complex2);
+    result.multiply(complex1, complex2);
+    result.divide(complex1, complex2);
+    result.abs(complex1, complex2);
     
     
     
