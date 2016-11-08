@@ -73,27 +73,32 @@ int main() {
     double D;
     //takes in values for A, B, C, D
     cout << "Enter the first complex number: ";
-    cin >> A, B;
+    cin >> A >> B;
     
     cout << "Enter the second complex number: ";
-    cin >> C, D;
+    cin >> C >> D;
     cout <<endl;
     //calls to find addition, subtraction, multiplication, division and absolute value of complex numbers entered
     Complex result;
     Complex complex1(A, B);
     Complex complex2(C, D);
     
-    result = complex1+complex2;
-    result = complex1-complex2;
-    result = complex1*complex2;
-    result = complex1/complex2;
-    double abs = complex1.abs();
     //outputs them like in the book example
+    result = complex1+complex2;
     cout << "(" << complex1 << "i) + (" << complex2 << "i) = " << result <<"i" <<endl;
+    
+    result = complex1-complex2;
     cout << "(" << complex1 << "i) - (" << complex2 << "i) = " << result <<"i" <<endl;
+    
+    result = complex1*complex2;
     cout << "(" << complex1 << "i) * (" << complex2 << "i) = " << result <<"i" <<endl;
+    
+    result = complex1/complex2;
     cout << "(" << complex1 << "i) / (" << complex2 << "i) = " << result <<"i" <<endl;
-    cout << "|" << complex1 << "i| = " << result <<endl;
+    
+    double abs;
+    abs = complex1.abs();
+    cout << "|" << complex1 << "i| = " << abs <<endl;
     
     return 0;
 }
