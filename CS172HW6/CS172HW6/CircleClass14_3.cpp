@@ -56,6 +56,48 @@ int Circle::getNumberOfObjects()
     return numberOfObjects;
 }
 
+bool Circle::operator<(Circle& c)
+{
+    if(getRadius() < c.getRadius())
+        return true;
+    else
+        return false;
+}
+bool Circle::operator<=(Circle& c)
+{
+    if(getRadius() <= c.getRadius())
+        return true;
+    else
+        return false;
+}
+bool Circle::operator==(Circle& c)
+{
+    if(getRadius() == c.getRadius())
+        return true;
+    else
+        return false;
+}
+bool Circle::operator!=(Circle& c)
+{
+    if(getRadius() != c.getRadius())
+        return true;
+    else
+        return false;
+}
+bool Circle::operator>(Circle& c)
+{
+    if(getRadius() > c.getRadius())
+        return true;
+    else
+        return false;
+}
+bool Circle::operator>=(Circle& c)
+{
+    if(getRadius() >= c.getRadius())
+        return true;
+    else
+        return false;
+}
 
 
 

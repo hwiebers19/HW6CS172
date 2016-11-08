@@ -19,10 +19,14 @@ void babyName()
 {
     int year;
     int rank;
-    int bscore;
-    int gscore;
-char ch;
-string name, bname, gname, filename;
+    string bscore;
+    string gscore;
+    char ch;
+    string name;
+    string bname;
+    string gname;
+    string filename;
+    
 cout << "Enter the year: ";
 cin >> year;
     
@@ -63,71 +67,19 @@ switch (year)
                 {
                     if (name == bname)
                     {
-                        cout << name << "is ranked #" << rank << "in year" << year;
+                        cout << name << "is ranked #" << rank << " in year " << year <<endl;
                     }
                 }
                 else if (ch == 'F' || ch == 'f')
                 {
                     if (name == gname)
                     {
-                        cout << name << "is ranked #" << rank << "in year" << year;
+                        cout << name << "is ranked #" << rank << " in year " << year<<endl;
                     }
                 }
             }
         }
         input.close();
 }
-/*
-void babyName()
-{
-    string year;
-    cout<<"Enter the year: ";
-    cin>>year;
-    
-    string gender;
-    cout<<"Enter the gender: ";
-    cin>>gender;
-    
-    string name;
-    cout<<"Enter the name: ";
-    cin>>name;
-    
-    
-    
-    ifstream babyFile;
-    babyFile.open("Babynameranking2010.txt", fstream::in);
-    babyFile.open("Babynameranking2011.txt", fstream::in);
-    babyFile.open("Babynameranking2012.txt", fstream::in);
-    babyFile.open("Babynameranking2013.txt", fstream::in);
-    babyFile.open("Babynameranking2014.txt", fstream::in);
-    
-    string line;
-    string female_name;
-    string male_name;
-    string rank;
-    if( !babyFile.eof() )
-    {
-        cout << "Error, file can not be opened. "<<endl;
-    }
-    else
-    {
-        
-        babyFile >> rank >> male_name >> female_name;
-        
-        
-        if ( male_name == name )
-        {
-            cout << "Male ranking is " << rank << endl;
-        }
-        if ( female_name == name )
-        {
-            cout << "Female ranking is " << rank << endl;
-        }
-    }
-    
-    babyFile.close();
-    
-    
-}
-*/
+
  

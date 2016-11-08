@@ -25,6 +25,12 @@ public:
     void setRadius(double newRadius);
     static int getNumberOfObjects();
     void classTest();
+    bool operator<(Circle&);
+    bool operator<=(Circle&);
+    bool operator==(Circle&);
+    bool operator!=(Circle&);
+    bool operator>(Circle&);
+    bool operator>=(Circle&);
 };
 
 

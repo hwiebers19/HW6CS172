@@ -8,7 +8,7 @@
 
 #ifndef ComplexClass14_7_hpp
 #define ComplexClass14_7_hpp
-
+using namespace std;
 #include <stdio.h>
 //void complexClass();
 class Complex
@@ -25,11 +25,16 @@ public:
     double getA();
     double getB();
     
-    Complex add(Complex&, Complex&);
-    Complex subtract(Complex&, Complex&);
-    Complex multiply(Complex&, Complex&);
-    Complex divide(Complex&, Complex&);
-    double abs(Complex&, Complex&);
+    
+    double abs();
+    Complex operator+(Complex& num);
+    Complex operator-(Complex& num);
+    Complex operator*(Complex& num);
+    Complex operator/(Complex& num);
+    
+    friend ostream& operator<<(ostream& str, Complex& num);
+    
+
 };
 
 
