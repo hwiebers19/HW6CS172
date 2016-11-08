@@ -24,14 +24,17 @@ void countCharacters()
     cout << "Enter a file name: ";
     getline(cin, fileName);
     
-    ifstream iofile(fileName, ios::in); // Open a file for input/output
-    if ( ! iofile ) // check to see if the file exists already or not
+    // Open a file for input
+    ifstream iofile(fileName, ios::in);
+    // check to see if the file exists already or not
+    if ( ! iofile )
     {
         cout << "Error: file could not be opened ";
     }
     else
     {
         char characters;
+        //counts the characters
         while(iofile >> characters)
         {
             count++;

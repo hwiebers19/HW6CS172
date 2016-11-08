@@ -16,16 +16,17 @@
 #include <vector>
 #include <fstream>
 using namespace std;
+
 void createTextFile()
 {
-    
+    //creates text file if not already created
     ofstream output;
     
     output.open ("Exercise13_1.txt", fstream::out | fstream::app);
     
     
     srand ((unsigned int)time(NULL));
-    
+    //puts numbers 1 through 100 into text file
     for(int i=0; i<100; i++)
     {
         int x = rand() %100;

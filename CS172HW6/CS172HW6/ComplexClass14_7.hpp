@@ -10,7 +10,8 @@
 #define ComplexClass14_7_hpp
 using namespace std;
 #include <stdio.h>
-//void complexClass();
+
+//creates the complex class and promises it 
 class Complex
 {
 private:

@@ -11,6 +11,8 @@
 
 #include <stdio.h>
 int ex04();
+//the circle class
+//promises the compondents of the class
 class Circle
 {
 private:

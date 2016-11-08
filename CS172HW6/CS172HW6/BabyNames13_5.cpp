@@ -15,8 +15,10 @@
 #include <fstream>
 using namespace std;
 #include "BabyNames13_5.hpp"
+
 void babyName()
 {
+    //initalizes
     int year;
     int rank;
     string bscore;
@@ -26,10 +28,10 @@ void babyName()
     string bname;
     string gname;
     string filename;
-    
+//asks user to imput the year
 cout << "Enter the year: ";
 cin >> year;
-    
+//calls correct textfile
 switch (year)
 {
     case 2010:filename = "Babynameranking2010.txt";
@@ -46,12 +48,13 @@ switch (year)
         
 }
     
-
+    //asks user for gender
         cout << "Enter the gender: ";
         cin >> ch;
+    //asks user for name
         cout << "Enter the name: ";
         cin >> name;
-    
+    //checks if file exists
         ifstream input(filename.c_str());
     
         if (input.fail())
@@ -60,8 +63,10 @@ switch (year)
         }
         if (!input.eof())
         {
+            //finds the ranking for the specific name and year entered and outputs it
             while (!input.eof())
             {
+                //males
                 input >> rank >> bname >> bscore >> gname >> gscore;
                 if (ch == 'M' || ch == 'm')
                 {
@@ -70,6 +75,7 @@ switch (year)
                         cout << name << "is ranked #" << rank << " in year " << year <<endl;
                     }
                 }
+                //females
                 else if (ch == 'F' || ch == 'f')
                 {
                     if (name == gname)

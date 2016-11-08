@@ -10,6 +10,7 @@
 #define CountCharacters13_2_hpp
 
 #include <stdio.h>
+//promises
 void countCharacters();
 
 
