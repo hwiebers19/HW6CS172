@@ -21,11 +21,11 @@ void countCharacters()
 {
     int count = 0;
     string fileName;
-    cout << "Enter a file name: ";
+    cout << "Enter a file name (make sure to use exact punctuation ie capitals): ";
     getline(cin, fileName);
     
     // Open a file for input
-    ifstream iofile(fileName, ios::in);
+    fstream iofile(fileName, ios::in);
     // check to see if the file exists already or not
     if ( ! iofile )
     {
@@ -39,9 +39,10 @@ void countCharacters()
         {
             count++;
         }
-        iofile.clear();
-        iofile.seekg(0, ios::end);
-        //iofile << "This file has" << count << " characters." << endl;
+        //iofile.clear();
+        //iofile.seekg(0, ios::end);
+        //outputs results
+        cout << "This file has " << count << " characters." << endl;
     }
    
 }
